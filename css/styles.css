@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    font-size: 100%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgb(49, 2, 80) 55%, rgb(163, 27, 181) 100%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body > div {
+    width: 70%;
+    max-width: 90rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #c6c6c6;
+    background-color: #ffffff;
+
+}
+
+p {
+    font-size: 1rem;
+    margin: 0 auto;
+}
+
+.danger-label{
+    width: 30%;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    background-color: #af0505;
+    border: 1px solid #c6c6c6;
+    
+}
+
+.danger-label p {
+    margin: 0 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.left-align {
+    text-align: right;
+    margin-right: 1.5rem;
+}
+
+.btn{
+    padding: 0.4rem 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    border: 1px solid #c6c6c6;
+}
+
+.btn-submit{
+    background-color:#1EB300 ;
+}
+
