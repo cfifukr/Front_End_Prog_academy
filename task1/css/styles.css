@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Ubuntu_Reg;
+    src: url(../static/fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu_Bold;
+    src: url(../static/fonts/Ubuntu/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Ubuntu_Light;
+    src: url(../static/fonts/Ubuntu/Ubuntu-Light.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: Ubuntu_Italic;
+    src: url(../static/fonts/Ubuntu/Ubuntu-Italic.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: Madimi;
+    src: url(../static/fonts/Madimi_One/MadimiOne-Regular.ttf);
+}
+
+body{
+    background-image: linear-gradient(to right, #68cda5, #80ab68, #8f873e, #93612d, #893b30, #923735, #9a323c, #a22d44, #cb4d3f, #ea7432, #fca21d, #ffd300);
+    font-size: 100%;
+    margin: 0;
+}
+h1, h2, h3, h4, h5{
+    font-family: "Ubuntu_Reg";
+    font-weight: bold;
+}
+
+h1{
+    font-family: "Madimi";
+}
+
+.container{
+    width: 75%;
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    margin: auto;
+}
+
+
+
+
+.product .text-center img {
+    max-width: 90%;
+    max-height: 10rem;
+}
+.product .title {
+    overflow: hidden;
+    display: block;
+    margin: 1rem 0;
+    height: 1.3rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.description p{
+    font-family: "Ubuntu_Reg";
+    font-weight: lighter;
+}
+.product:hover .description{
+    height: 10.5rem;
+    overflow: scroll;
+}
+.product .description {
+
+    color: #c6c6c6;
+    font-size: 0.9rem;
+    height: 2.5rem;
+    overflow: scroll; 
+}
+.product .price {
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: 600;
+    padding-left: 1rem;
+    color: #010101;
+    font-family: "Ubuntu_Italic";
+}
+.product .no-more{
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: 600;
+    padding-left: 1rem;
+    color: #ea0707;
+}
+
+.shadow {
+    border-radius: 0.3rem;
+    background-color: #ffffff00;
+    transition: background-color 1s;
+}
+
+
+.product:hover .shadow {
+    background-color: #00000036;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.product:hover .title{
+    height: auto;
+}
+
+.product:hover .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.product:hover{
+    background-color: #ffffff;
+    transform: scale(1.05);
+    z-index: 2;
+    transform-origin: center;
+
+    
+}
+.add-product-container{
+    display: none;
+}
+
+.product:hover .add-product-input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    width: 2rem;
+    z-index: 2;
+}
+
+.product:hover .add-product-button {
+    padding: 0.5rem 4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.product:hover .add-product-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+
+}
